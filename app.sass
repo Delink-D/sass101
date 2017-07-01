@@ -38,10 +38,14 @@ body
 article
 	background: #fff
 	width: 760px
-	margin: 0 auto
+	margin: -60px auto
 	padding: 40px
 	box-sizing: border-box
+	position: relative
+	z-index: -2
 
 header
 	+circleObj(100%, 200px, 200px, $blue, #fff)
-	font-size: $font-size - 4
+
+	h1
+		font-size: $font-size + 3
