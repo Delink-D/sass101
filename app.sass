@@ -13,7 +13,18 @@ $font-size: 14px
 
 // MIXINS
 
-
+=circleObj($rad, $height, $width, $bg, $col)
+	-webkit-border-radius: $rad
+	-moz-border-radius: $rad
+	-ms-border-radius: $rad
+	border-radius: $rad
+	height: $height
+	width: $width
+	line-height: $height
+	text-align: center
+	background: $bg
+	color: $col
+	margin: 0 auto
 
 
 // SASS STYLES
@@ -30,3 +41,7 @@ article
 	margin: 0 auto
 	padding: 40px
 	box-sizing: border-box
+
+header
+	+circleObj(100%, 200px, 200px, $blue, #fff)
+	font-size: $font-size - 4
